@@ -1,0 +1,487 @@
+.table {
+	filter: drop-shadow(0px 2px 15px rgba(211, 211, 211, 0.25));
+	border-radius: 6px;
+	overflow: hidden;
+	& + & {
+		margin-top: 30px;
+	}
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		padding: 18px 10px;
+		background-color: #ffffff;
+		border-radius: 6px 6px 0px 0px;
+		&-caption {
+			font-weight: 700;
+			font-size: 10px;
+			line-height: 12px;
+			color: #000000;
+		}
+		&-icon {
+			width: 15px;
+			height: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			span {
+				display: block;
+				width: 8px;
+				height: 2px;
+				background-color: #000000;
+				&:last-child {
+					position: absolute;
+					transform: rotate(0deg);
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__content {
+		display: none;
+		border-top: 1px solid #ebebeb;
+		&.active {
+			display: block;
+		}
+	}
+	&-thead {
+		width: 100%;
+	}
+	&-tr {
+		display: flex;
+		width: 100%;
+	}
+	&-td {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 10px;
+		height: 52px;
+		background-color: #ffffff;
+		border-right: 1px solid #ebebeb;
+		&:last-child {
+			border-right: none;
+		}
+	}
+	&-tbody {
+		.table {
+			&-tr {
+				.table-td {
+					background-color: #f5f5f5;
+				}
+				&:nth-child(2n) {
+					.table-td {
+						background-color: #ffffff;
+					}
+				}
+			}
+			&__caption {
+				display: none;
+			}
+		}
+	}
+	&__caption {
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 12px;
+		color: #000000;
+	}
+	&__value {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		color: #000000;
+		&.green {
+			color: #1fba14;
+		}
+	}
+	&__icon {
+		display: flex;
+	}
+	&__status {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 12px;
+		color: #ffffff;
+		padding: 5px;
+		border-radius: 3px;
+		&.gray {
+			background-color: #d9d9d9;
+			color: #000000;
+		}
+		&.green {
+			background-color: #1fba14;
+		}
+		&.blue {
+			background-color: #149cba;
+		}
+		&.yellow {
+			background-color: #baa914;
+		}
+	}
+	&__user,
+	&__document {
+		display: flex;
+		align-items: center;
+		&-icon {
+			width: 12px;
+			height: 12px;
+			margin-right: 5px;
+		}
+		&-caption {
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 12px;
+			color: #000000;
+		}
+	}
+	&__appeals {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		color: #000000;
+		&.active {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 16px;
+			height: 16px;
+			background-color: #1fba14;
+			border-radius: 2px;
+			font-weight: 700;
+			color: #ffffff;
+		}
+	}
+	&--charges {
+		.table-td {
+			width: 20%;
+		}
+	}
+	&--story {
+		.table-td {
+			&--1 {
+				width: 8%;
+			}
+			&--2,
+			&--3,
+			&--4,
+			&--8 {
+				width: 11.5%;
+			}
+			&--5 {
+				width: 20%;
+			}
+			&--6 {
+				width: 12.5%;
+			}
+			&--7 {
+				width: 13.5%;
+			}
+		}
+	}
+	&--appeals {
+		.table-td {
+			&--1 {
+				width: 6.5%;
+			}
+			&--2 {
+				width: 15%;
+			}
+			&--3 {
+				width: 10%;
+			}
+			&--4 {
+				width: 15%;
+			}
+			&--5 {
+				width: 15%;
+			}
+			&--6 {
+				width: 13.5%;
+			}
+			&--7 {
+				width: 13.5%;
+			}
+			&--8 {
+				width: 11.5%;
+			}
+		}
+	}
+	&--agreements {
+		.table {
+			&__content {
+				border-top: none;
+			}
+			&-td {
+				border-color: #d9d9d9;
+				&--1 {
+					width: 34.5%;
+				}
+				&--2 {
+					width: 21.5%;
+				}
+				&--3 {
+					width: 22%;
+				}
+				&--4 {
+					width: 22%;
+				}
+			}
+		}
+	}
+	&--rate {
+		.table {
+			&__content {
+				border-top: none;
+			}
+			&-td {
+				border-bottom: 1px solid #d9d9d9;
+				border-color: #d9d9d9;
+				&--1 {
+					width: 78%;
+				}
+				&--2 {
+					width: 11%;
+				}
+				&--3 {
+					width: 11%;
+				}
+			}
+			&-tbody {
+				.table {
+					&-tr {
+						.table-td {
+							background-color: #ffffff;
+							border-color: #d9d9d9;
+						}
+						&:nth-child(2n) {
+							.table-td {
+								background-color: #ffffff;
+								border-color: #d9d9d9;
+							}
+						}
+					}
+				}
+			}
+			&__value {
+				max-width: 440px;
+			}
+		}
+	}
+	&.active {
+		.table {
+			&__top {
+				&-icon {
+					span {
+						&:last-child {
+							transform: rotate(90deg);
+							transition: all 0.3s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.table {
+		&--agreements {
+			.table-td {
+				&--1 {
+					width: 30%;
+				}
+				&--2 {
+					width: 18%;
+				}
+				&--3 {
+					width: 30%;
+				}
+				&--4 {
+					width: 22%;
+				}
+			}
+		}
+		&--rate {
+			.table {
+				&-td {
+					&--1 {
+						width: 70%;
+					}
+					&--2 {
+						width: 15%;
+					}
+					&--3 {
+						width: 15%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+	.table {
+		&__top {
+			padding: 19px 10px;
+			border-bottom: none;
+			border-radius: 6px;
+			margin-bottom: 10px;
+		}
+		&__content {
+			border-top: none;
+		}
+		&-thead {
+			display: none;
+		}
+		&-tbody {
+			border-radius: 6px;
+			overflow: hidden;
+			.table {
+				&-tr {
+					.table-td {
+						background-color: transparent;
+					}
+					&:nth-child(2n) {
+						.table-td {
+							background-color: transparent;
+						}
+					}
+				}
+				&__caption {
+					display: inline-block;
+					margin-right: 5px;
+				}
+			}
+		}
+		&-tr {
+			flex-wrap: wrap;
+			padding: 5px 0px;
+			background-color: #f5f5f5;
+			&:nth-child(2n) {
+				background-color: #ffffff;
+			}
+		}
+		&-td {
+			justify-content: flex-start;
+			padding: 5px 10px;
+			height: auto;
+			border-right: none;
+		}
+		&--charges {
+			.table-td {
+				width: 100%;
+			}
+		}
+		&--story {
+			.table-td {
+				&--1 {
+					width: 100%;
+				}
+				&--2,
+				&--3,
+				&--4,
+				&--8 {
+					width: 100%;
+				}
+				&--5 {
+					width: 100%;
+				}
+				&--6 {
+					width: 100%;
+				}
+				&--7 {
+					width: 100%;
+				}
+			}
+		}
+		&--appeals {
+			.table-td {
+				&--1 {
+					width: 100%;
+				}
+				&--2 {
+					width: 100%;
+				}
+				&--3 {
+					width: 100%;
+				}
+				&--4 {
+					width: 100%;
+				}
+				&--5 {
+					width: 100%;
+				}
+				&--6 {
+					width: 100%;
+				}
+				&--7 {
+					width: 100%;
+				}
+				&--8 {
+					width: 100%;
+				}
+			}
+		}
+		&--agreements {
+			.table-td {
+				&--1 {
+					width: 100%;
+				}
+				&--2 {
+					width: 100%;
+				}
+				&--3 {
+					width: 100%;
+				}
+				&--4 {
+					width: 100%;
+				}
+			}
+		}
+		&--rate {
+			.table {
+				&-tr {
+					background-color: #ffffff;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 0;
+					&:first-child {
+						padding-top: 5px;
+					}
+					&:last-child {
+						.table {
+							&-td {
+								&:last-child {
+									border-bottom: none;
+								}
+							}
+						}
+					}
+				}
+				&-td {
+					border-bottom: none;
+					padding: 5px 0px;
+					&--1 {
+						width: 100%;
+					}
+					&--2 {
+						width: 100%;
+					}
+					&--3 {
+						width: 100%;
+					}
+					&:last-child {
+						border-bottom: 1px solid #d9d9d9;
+						padding-bottom: 9px;
+					}
+				}
+			}
+		}
+	}
+}

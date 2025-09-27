@@ -1,0 +1,132 @@
+.program {
+	margin-top: -20px;
+	&-top {
+		&__text {
+			margin-bottom: 20px;
+			p {
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 20px;
+				color: #000000;
+			}
+		}
+	}
+	&-referral {
+		margin-top: 30px;
+		&__caption {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000000;
+			margin-bottom: 10px;
+		}
+		&__form {
+			display: flex;
+			margin-bottom: 30px;
+		}
+		&__field {
+			width: 415px;
+			border-right: none;
+			border-radius: 6px 0px 0px 6px;
+		}
+		&__btn {
+			border-radius: 0px 6px 6px 0px;
+		}
+	}
+	&-description {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		&__caption {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			color: #1fba14;
+			margin-bottom: 30px;
+			display: block;
+		}
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -10px;
+		}
+		&__coll {
+			width: calc(33.333% - 20px);
+			margin: 10px;
+			position: relative;
+			padding: 12px 10px;
+			background-color: #1fba14;
+			border-radius: 6px;
+		}
+		&__price {
+			font-weight: 700;
+			color: #ffffff;
+			font-size: 14px;
+			line-height: 1.1;
+			margin-bottom: 5px;
+			span {
+				font-size: 16px;
+				line-height: 19px;
+			}
+		}
+		&__desc {
+			font-weight: 400;
+			font-size: 8px;
+			line-height: 10px;
+			color: #ffffff;
+		}
+		&__icon {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.program {
+		margin-top: -10px;
+	}
+}
+@media (max-width: 760px) {
+	.program {
+		margin-top: 0px;
+		&-top {
+			&__btn {
+				width: 100%;
+			}
+		}
+		&-referral {
+			margin-top: 20px;
+			&__caption {
+				font-size: 14px;
+				line-height: 17px;
+			}
+			&__form {
+				flex-wrap: wrap;
+			}
+			&__field {
+				width: 100%;
+				border-right: 1px solid #ebebeb;
+				border-radius: 6px;
+			}
+			&__btn {
+				border-radius: 6px;
+				width: 100%;
+				margin-top: 10px;
+			}
+		}
+		&-description {
+			margin-top: 20px;
+			margin-bottom: 30px;
+			&__row {
+				margin: 0px 0px -10px;
+			}
+			&__coll {
+				width: 100%;
+				margin: 0px 0px 10px;
+				padding: 13px 10px;
+			}
+		}
+	}
+}

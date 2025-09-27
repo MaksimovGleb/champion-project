@@ -1,0 +1,519 @@
+table {
+  width: 100%;
+}
+
+.table {
+  filter: drop-shadow(0px 2px 15px rgba(211, 211, 211, 0.25));
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.table + .table {
+  margin-top: 30px;
+}
+
+.table__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 18px 10px;
+  background-color: #ffffff;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.table__top-caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.table__top-icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.table__top-icon span {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.table__top-icon span:last-child {
+  position: absolute;
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.table__content {
+  display: none;
+  border-top: 1px solid #ebebeb;
+}
+
+.table__content.active {
+  display: block;
+}
+
+.table-thead {
+  width: 100%;
+}
+
+.table-tr {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.table-td, .table td, .table th {
+  padding: 20px 10px;
+  border-right: 1px solid #ebebeb;
+}
+
+.table-td:last-child, .table td:last-child, .table th:last-child {
+  border-right: none;
+}
+
+.table-td {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-tbody .table-tr, .table tbody .table-tr {
+  background-color: #f5f5f5;
+}
+
+.table-tbody .table-tr:nth-child(2n), .table tbody .table-tr:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.table-tbody .table__caption, .table tbody .table__caption {
+  display: none;
+}
+
+.table-tbody tr, .table tbody tr {
+  background-color: #f5f5f5;
+}
+
+.table-tbody tr[data-redirect], .table tbody tr[data-redirect] {
+  cursor: pointer;
+}
+
+.table-tbody tr:nth-child(2n), .table tbody tr:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.table thead td.sortable, .table thead th.sortable {
+  padding-right: 30px;
+  background-image: url(../../images/arrows.svg);
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+}
+
+.table__caption, .table thead td, .table thead th {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.table__value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.table__value.green {
+  color: #1fba14;
+}
+
+.table__icon {
+  display: flex;
+}
+
+.table__status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.table__status.gray {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+
+.table__status.green {
+  background-color: #1fba14;
+}
+
+.table__status.blue {
+  background-color: #149cba;
+}
+
+.table__status.yellow {
+  background-color: #baa914;
+}
+
+.table__user, .table__document {
+  display: flex;
+  align-items: center;
+}
+
+.table__user-icon, .table__document-icon {
+  min-width: 12px;
+  min-height: 12px;
+  margin-right: 5px;
+}
+
+.table__user-caption, .table__document-caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.table__user-icon {
+  min-width: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  max-height: 35px;
+}
+
+.table__user-icon img {
+  border-radius: 50%;
+}
+
+.table__appeals {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.table__appeals.active {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background-color: #1fba14;
+  border-radius: 2px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.table--charges .table-td {
+  width: 20%;
+}
+
+.table--story .table-td--1 {
+  width: 8%;
+}
+
+.table--story .table-td--2, .table--story .table-td--3, .table--story .table-td--4, .table--story .table-td--8 {
+  width: 11.5%;
+}
+
+.table--story .table-td--5 {
+  width: 20%;
+}
+
+.table--story .table-td--6 {
+  width: 12.5%;
+}
+
+.table--story .table-td--7 {
+  width: 13.5%;
+}
+
+.table--appeals .table-td--1 {
+  width: 6.5%;
+}
+
+.table--appeals .table-td--2 {
+  width: 15%;
+}
+
+.table--appeals .table-td--3 {
+  width: 10%;
+}
+
+.table--appeals .table-td--4 {
+  width: 15%;
+}
+
+.table--appeals .table-td--5 {
+  width: 15%;
+}
+
+.table--appeals .table-td--6 {
+  width: 13.5%;
+}
+
+.table--appeals .table-td--7 {
+  width: 13.5%;
+}
+
+.table--appeals .table-td--8 {
+  width: 11.5%;
+}
+
+.table--agreements .table__content {
+  border-top: none;
+}
+
+.table--agreements .table-td {
+  border-color: #d9d9d9;
+}
+
+.table--agreements .table-td--1 {
+  width: 34.5%;
+}
+
+.table--agreements .table-td--2 {
+  width: 21.5%;
+}
+
+.table--agreements .table-td--3 {
+  width: 22%;
+}
+
+.table--agreements .table-td--4 {
+  width: 22%;
+}
+
+.table--rate .table__content {
+  border-top: none;
+}
+
+.table--rate .table-td {
+  border-bottom: 1px solid #d9d9d9;
+  border-color: #d9d9d9;
+  /*&--1 {
+					width: 78%;
+				}
+				&--2 {
+					width: 11%;
+				}
+				&--3 {
+					width: 11%;
+				}*/
+}
+
+.table--rate .table-tbody .table-tr .table-td {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+}
+
+.table--rate .table-tbody .table-tr:nth-child(2n) .table-td {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+}
+
+.table--rate .table__value {
+  max-width: 440px;
+}
+
+.table.active .table__top-icon span:last-child {
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1200px) {
+  .table--agreements .table-td--1 {
+    width: 30%;
+  }
+  .table--agreements .table-td--2 {
+    width: 18%;
+  }
+  .table--agreements .table-td--3 {
+    width: 30%;
+  }
+  .table--agreements .table-td--4 {
+    width: 22%;
+  }
+  .table--rate .table-td--1 {
+    width: 70%;
+  }
+  .table--rate .table-td--2 {
+    width: 15%;
+  }
+  .table--rate .table-td--3 {
+    width: 15%;
+  }
+}
+
+@media (max-width: 760px) {
+  table {
+    display: block;
+  }
+  table tbody {
+    display: block;
+  }
+  table tbody tr td {
+    border-bottom: solid 1px #fff;
+  }
+  table tbody tr td:last-child {
+    border-bottom: none;
+  }
+  table tbody tr:nth-child(even) td {
+    border-bottom-color: #f5f5f5;
+  }
+  table tr {
+    display: block;
+  }
+  table tr td {
+    display: block;
+  }
+  .table__top, table__top {
+    padding: 19px 10px;
+    border-bottom: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .table__content, table__content {
+    border-top: none;
+  }
+  .table-thead, .table thead, table-thead, table thead {
+    display: none;
+  }
+  .table-tbody, .table tbody, table-tbody, table tbody {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .table-tbody .table-tr .table-td, .table-tbody td-tr .table-td, .table tbody .table-tr .table-td, .table tbody td-tr .table-td, table-tbody .table-tr .table-td, table-tbody td-tr .table-td, table tbody .table-tr .table-td, table tbody td-tr .table-td {
+    background-color: transparent;
+  }
+  .table-tbody .table-tr:nth-child(2n) .table-td, .table-tbody td-tr:nth-child(2n) .table-td, .table tbody .table-tr:nth-child(2n) .table-td, .table tbody td-tr:nth-child(2n) .table-td, table-tbody .table-tr:nth-child(2n) .table-td, table-tbody td-tr:nth-child(2n) .table-td, table tbody .table-tr:nth-child(2n) .table-td, table tbody td-tr:nth-child(2n) .table-td {
+    background-color: transparent;
+  }
+  .table-tbody .table__caption, .table-tbody td__caption, .table tbody .table__caption, .table tbody td__caption, table-tbody .table__caption, table-tbody td__caption, table tbody .table__caption, table tbody td__caption {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .table-tbody .table__value, .table-tbody td__value, .table tbody .table__value, .table tbody td__value, table-tbody .table__value, table-tbody td__value, table tbody .table__value, table tbody td__value {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .table-tbody tr .td, .table tbody tr .td, table-tbody tr .td, table tbody tr .td {
+    background-color: transparent;
+  }
+  .table-tbody tr:nth-child(2n) .td, .table tbody tr:nth-child(2n) .td, table-tbody tr:nth-child(2n) .td, table tbody tr:nth-child(2n) .td {
+    background-color: transparent;
+  }
+  .table-tr, .table tr, table-tr, table tr {
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    background-color: #f5f5f5;
+  }
+  .table-tr:nth-child(2n), .table tr:nth-child(2n), table-tr:nth-child(2n), table tr:nth-child(2n) {
+    background-color: #ffffff;
+  }
+  .table-td, .table td, table-td, table td {
+    justify-content: flex-start;
+    padding: 5px 10px;
+    height: auto;
+    border-right: none;
+  }
+  .table--charges .table-td, table--charges .table-td {
+    width: 100%;
+  }
+  .table--story .table-td--1, table--story .table-td--1 {
+    width: 100%;
+  }
+  .table--story .table-td--2, .table--story .table-td--3, .table--story .table-td--4, .table--story .table-td--8, table--story .table-td--2, table--story .table-td--3, table--story .table-td--4, table--story .table-td--8 {
+    width: 100%;
+  }
+  .table--story .table-td--5, table--story .table-td--5 {
+    width: 100%;
+  }
+  .table--story .table-td--6, table--story .table-td--6 {
+    width: 100%;
+  }
+  .table--story .table-td--7, table--story .table-td--7 {
+    width: 100%;
+  }
+  .table--appeals .table-td--1, table--appeals .table-td--1 {
+    width: 100%;
+  }
+  .table--appeals .table-td--2, table--appeals .table-td--2 {
+    width: 100%;
+  }
+  .table--appeals .table-td--3, table--appeals .table-td--3 {
+    width: 100%;
+  }
+  .table--appeals .table-td--4, table--appeals .table-td--4 {
+    width: 100%;
+  }
+  .table--appeals .table-td--5, table--appeals .table-td--5 {
+    width: 100%;
+  }
+  .table--appeals .table-td--6, table--appeals .table-td--6 {
+    width: 100%;
+  }
+  .table--appeals .table-td--7, table--appeals .table-td--7 {
+    width: 100%;
+  }
+  .table--appeals .table-td--8, table--appeals .table-td--8 {
+    width: 100%;
+  }
+  .table--agreements .table-td--1, table--agreements .table-td--1 {
+    width: 100%;
+  }
+  .table--agreements .table-td--2, table--agreements .table-td--2 {
+    width: 100%;
+  }
+  .table--agreements .table-td--3, table--agreements .table-td--3 {
+    width: 100%;
+  }
+  .table--agreements .table-td--4, table--agreements .table-td--4 {
+    width: 100%;
+  }
+  .table--rate .table-tr, table--rate .table-tr {
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+  }
+  .table--rate .table-tr:first-child, table--rate .table-tr:first-child {
+    padding-top: 5px;
+  }
+  .table--rate .table-tr:last-child .table-td:last-child, table--rate .table-tr:last-child .table-td:last-child {
+    border-bottom: none;
+  }
+  .table--rate .table-td, table--rate .table-td {
+    border-bottom: none;
+    padding: 5px 0px;
+  }
+  .table--rate .table-td--1, table--rate .table-td--1 {
+    width: 100%;
+  }
+  .table--rate .table-td--2, table--rate .table-td--2 {
+    width: 100%;
+  }
+  .table--rate .table-td--3, table--rate .table-td--3 {
+    width: 100%;
+  }
+  .table--rate .table-td:last-child, table--rate .table-td:last-child {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 9px;
+  }
+  .table__user, .table__document {
+    display: inline-flex;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,28 @@
+@extends('layouts.admin-lte')
+
+@section('sidebar')
+    @include('client.partials.sidebar')
+@endsection
+
+@section('menu')
+    @include('client.partials.content-header')
+@endsection
+
+@section('content')
+    @include('client.partials.fast-panel')
+    @include('client.partials.services-table')
+@endsection
+
+@section('footer')
+    @include('client.partials.footer')
+@endsection
+
+@section('custom-scripts')
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            //alert();
+        });
+    </script>
+
+@endsection

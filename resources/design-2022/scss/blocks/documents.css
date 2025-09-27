@@ -1,0 +1,266 @@
+.documents {
+  margin-top: -20px;
+}
+
+.documents .document-attention {
+  display: none;
+}
+
+.documents .search-form {
+  margin-bottom: 20px;
+}
+
+.documents .search-form .form-box {
+  display: flex;
+  gap: 10px;
+}
+
+.documents .search-form .btn {
+  flex-basis: 17%;
+  min-width: 120px;
+}
+
+.documents-top {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4fcf3;
+  border-radius: 6px;
+}
+
+.documents-top__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.documents-top__icon img, .documents-top__icon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.documents-top__desc {
+  width: calc(100% - 40px);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.documents-top a {
+  text-decoration: underline;
+}
+
+.documents-top a:hover {
+  text-decoration: none;
+}
+
+.documents-top.type-warning {
+  background-color: #fcfcf3;
+}
+
+.documents-top.type-warning .documents-top__icon svg path {
+  fill: #ffc107;
+}
+
+.documents-top.type-warning a {
+  color: #ffc107;
+}
+
+.documents-top.type-warning a:hover {
+  color: #ffd218;
+}
+
+.documents-top.type-danger {
+  background-color: #fcf3f3;
+}
+
+.documents-top.type-danger .documents-top__icon svg path {
+  fill: #dc3545;
+}
+
+.documents-top.type-danger a {
+  color: #dc3545;
+}
+
+.documents-top.type-danger a:hover {
+  color: #ed4656;
+}
+
+.documents__body {
+  margin-top: 35px;
+}
+
+.documents__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.documents__item + .documents__item {
+  margin-top: 10px;
+}
+
+.documents__box {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 150px);
+}
+
+.documents__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.documents__caption {
+  width: calc(100% - 30px);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.documents__button {
+  width: 130px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1fba14;
+  padding: 9px;
+  border: 1px solid #1fba14;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.documents__button:hover {
+  color: #fff;
+  background-color: #3be92f;
+  border-color: #3be92f;
+  transition: all 0.3s;
+}
+
+.documents__bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.documents__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.documents__coll {
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.documents__coll-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.documents__coll-top {
+  min-height: 62px;
+  margin-bottom: 20px;
+}
+
+.documents__coll-caption {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.documents__coll-value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #cecfd3;
+}
+
+.documents__coll-btn {
+  width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1fba14;
+  padding: 11px;
+  border: 1px solid #1fba14;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.documents__coll-btn:hover {
+  color: #fff;
+  background-color: #3be92f;
+  border-color: #3be92f;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .documents__coll {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 1010px) {
+  .documents {
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 760px) {
+  .documents-top {
+    align-items: flex-start;
+    padding: 15px 10px;
+  }
+  .documents-top__desc {
+    width: calc(100% - 40px);
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .documents__body {
+    margin-top: 25px;
+  }
+  .documents__caption {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  .documents__box {
+    width: calc(100% - 140px);
+  }
+  .documents__btn {
+    width: 100%;
+  }
+  .documents__row {
+    margin: -5px;
+  }
+  .documents__coll {
+    width: 100%;
+    margin: 5px;
+  }
+}

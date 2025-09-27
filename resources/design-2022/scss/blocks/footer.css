@@ -1,0 +1,31 @@
+.footer {
+  padding: 19px 0px;
+  background-color: #f5f5f5;
+}
+
+.footer__copiright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #d9d9d9;
+  text-align: center;
+  padding-left: 298px;
+}
+
+@media (max-width: 1010px) {
+  .footer__copiright {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer__copiright {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+}

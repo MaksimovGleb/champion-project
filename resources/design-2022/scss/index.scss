@@ -1,0 +1,33 @@
+// @import url("http://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
+// Bootstrap
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Core
+//------------------------------------------------------------------------------
+
+@import "general/styles";
+@import "general/helpers";
+@import "general/fonts";
+
+// Blocks
+//------------------------------------------------------------------------------
+
+@import "blocks/pace";
+@import "blocks/header";
+@import "blocks/page";
+@import "blocks/sidebar";
+@import "blocks/form";
+@import "blocks/select";
+@import "blocks/footer";
+@import "blocks/documents";
+@import "blocks/info";
+@import "blocks/program";
+@import "blocks/table";
+@import "blocks/profile";
+@import "blocks/apeal";
+@import "blocks/partners";
+
+// File Pond
+@import "~filepond/dist/filepond.min.css";
+
+@import "general/files.css";

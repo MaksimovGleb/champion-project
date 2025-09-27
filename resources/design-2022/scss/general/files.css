@@ -1,0 +1,100 @@
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.btn-files{
+    gap: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #1fba14 !important;
+}
+
+.nav-pills .nav-link {
+    background-color:gray !important;
+}
+
+.accordion-header{
+    width: 100%;
+}
+a.blue-text{
+    color: #1b64fa;
+}
+
+a.blue-text:hover{
+    color: rgba(0, 0, 255, 0.788);
+}
+
+
+.accordion-button{
+    width: 80%;
+}
+
+a.download-files{
+    background-color: #1fba14;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+span.info-file{
+    font-size: 12px;
+    color: #737373;
+    line-height:1.35;
+}
+.alert-win{
+    bottom: 2% !important;
+    right: 2% !important;
+}
+div.vertical{
+    border-width: 1px;
+    border-right-style:solid;
+    color: #fff !important;
+}
+div>.btn{
+    border-radius: 0px !important;
+}
+div>.btn.left{
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+div>.btn.right{
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+/*.dropdown-menu{*/
+/*    border-radius: 10px !important;*/
+/*    background-color: #1fba14 !important;*/
+/*}*/
+
+.collapse-border{
+    border-style: dashed;
+    border-color: #1FBA14;
+    border-width: 1px;
+}
+
+.svg-size{
+    color: #1FBA14 !important;
+    font-size: 2rem;
+    padding-right:0.5rem;
+
+}
+
+.list-group-item{
+    border: 0px !important;
+}
+
+.tab-content.d-view{
+    display: block !important;
+}
+
+.custom-tooltip.tooltip > .tooltip-inner
+{
+    border-style: solid;
+    border-radius: 0px;
+    border-width: 1px;
+    background-color: white;
+    color: black;
+}

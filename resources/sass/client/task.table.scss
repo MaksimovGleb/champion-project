@@ -1,0 +1,105 @@
+.tasks-table tr[data-redirect]{
+	cursor:pointer;
+}
+
+@media (max-width: 991px) {
+    table.tasks-table{
+        display:block;
+        thead, tbody, tr, th, td{
+    		display:block;
+        }
+    }
+	.table.tasks-table{
+        th{
+            width:100%!important;
+            border:none!important;
+            &:first-of-type{
+                padding-left:0.75em!important;
+            }
+            &:last-of-type{
+                padding-right:0.75em!important;
+            }
+        }
+        td{
+            border:none;
+            margin: 0.75em;
+            padding: 0;
+            height: auto;
+            min-height: 0;
+            &:first-of-type{
+                padding-left:0!important;
+            }
+            &:last-of-type{
+                padding-right:0!important;
+            }
+        }
+    }
+    .tasks-table{
+        tbody tr{
+            margin:20px 10px;
+            border-radius: 7px;
+            background:rgba(0, 0, 0, 0.05);
+            border:none;
+            padding: 0.7em;
+            &.table-warning{
+                background-color: #ffeeba;
+            }
+            &.table-timing-goodly{
+                background-color: rgba(47, 255, 0, 0.4);
+            }
+            &.table-normally{
+                background-color: rgba(255, 111, 0, 0.4);
+            }
+            &.table-badly{
+                background-color: rgba(217, 13, 13, 0.4);
+            }
+            &.table-terribly{
+                background-color: rgba(66, 63, 63, 0.4);
+            }
+        }
+        td{
+            &.id-cell{
+                font-size:20px;
+                font-weight:bold;
+            }
+            &.date-cell{
+                float:left;
+            }
+            &.messages-cell{
+                float:right;
+            }
+            &.actions-cell{
+                .btn{
+                    width:100%;
+                }
+            }
+        }
+        th{
+            &.th-actions {
+                .btn{
+                    width:50%;
+                    float:left;
+                }
+            }
+        }
+        th.th-actions::after,
+        tbody tr::after{
+            content:'';
+            clear:both;
+            display:block;
+        }
+    }
+}
+
+/*@media (max-width: 575px) {
+	table thead th{
+		width: auto!important;
+	}
+}*/
+
+
+/*@media (max-width: 460px) {
+	tbody, tbody tr, td{
+		display:block;
+	}
+}*/

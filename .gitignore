@@ -72,6 +72,9 @@ laravel-echo-server.lock
 composer.lock
 /.php-cs-fixer.cache
 
+# Zencoder configuration files
+.zencoder/
+
 # Ignore temporary files
 *.php~
 # Ignore temporary files for Vue

@@ -19,8 +19,6 @@ return [
 
     'allowed_methods' => ['GET', 'POST', 'PUT', 'DELETE'],  // ['*'],
 
-    'allowed_origins' => ['https://myurist.online'],    //['*'],
-
     'allowed_origins_patterns' => [],
 
     'allowed_headers' => ['*'],

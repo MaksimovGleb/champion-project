@@ -14,7 +14,6 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
-    'admin_phone' => env('APP_ADMIN_PHONE', '+79850777550'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

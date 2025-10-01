@@ -50,6 +50,17 @@ RUN apt-get update && apt-get install -y \
 COPY --from=composer_build / /var/www/html
 COPY --from=node_build /app/public /var/www/html/public
 
+# Создаем необходимые директории, если они не существуют
+RUN mkdir -p /var/www/html/storage/app/public \
+    && mkdir -p /var/www/html/storage/framework/cache/data \
+    && mkdir -p /var/www/html/storage/framework/sessions \
+    && mkdir -p /var/www/html/storage/framework/views \
+    && mkdir -p /var/www/html/storage/logs \
+    && mkdir -p /var/www/html/bootstrap/cache
+
+# Копируем утилиту ожидания
+COPY docker/wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
 
 # Даем права на storage и cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
